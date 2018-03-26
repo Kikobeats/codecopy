@@ -25,8 +25,8 @@ $ npm install codecopy --save
 
 ```html
 <!-- CodeCopy Vanilla/UMD bundle -->
-<link rel="stylesheet" src="//cdn.jsdelivr.net/npm/codecopy.js/umd/codecopy.min.css"></link>
-<script src="//cdn.jsdelivr.net/npm/codecopy.js/umd/codecopy.min.js"></script>
+<link rel="stylesheet" src="//cdn.jsdelivr.net/npm/codecopy/umd/codecopy.min.css"></link>
+<script src="//cdn.jsdelivr.net/npm/codecopy/umd/codecopy.min.js"></script>
 ```
 
 Also available `amd` and `cjs` version.

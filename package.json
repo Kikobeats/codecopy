@@ -1,18 +1,18 @@
 {
-  "name": "codecopy.js",
+  "name": "codecopy",
   "description": "\"Copy to clipboard button\" for your code snippets",
-  "homepage": "https://github.com/Kikobeats/codecopy.js#readme",
-  "version": "0.2.0",
+  "homepage": "https://github.com/Kikobeats/codecopy#readme",
+  "version": "0.3.0",
   "main": "src/index.js",
   "author": {
     "name": "\"Copy to clipboard button\" for your code snippets"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kikobeats/codecopy.js.git"
+    "url": "git+https://github.com/Kikobeats/codecopy.git"
   },
   "bugs": {
-    "url": "https://github.com/Kikobeats/codecopy.js/issues"
+    "url": "https://github.com/Kikobeats/codecopy/issues"
   },
   "keywords": [
     "button",
