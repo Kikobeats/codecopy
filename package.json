@@ -1,0 +1,107 @@
+{
+  "name": "codecopy.js",
+  "description": "\"Copy to clipboard button\" for your code snippets",
+  "homepage": "https://github.com/Kikobeats/codecopy.js#readme",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "author": {
+    "name": "\"Copy to clipboard button\" for your code snippets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kikobeats/codecopy.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kikobeats/codecopy.js/issues"
+  },
+  "keywords": [
+    "button",
+    "clip",
+    "clipboard",
+    "code",
+    "copy",
+    "snippet",
+    "vanilla"
+  ],
+  "dependencies": {
+    "clipboard": "~2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-eslint": "latest",
+    "babel-loader": "latest",
+    "babel-plugin-transform-object-rest-spread": "latest",
+    "babel-preset-env": "latest",
+    "case-sensitive-paths-webpack-plugin": "latest",
+    "concurrently": "latest",
+    "escape-string-regexp": "latest",
+    "eslint-plugin-jsx-a11y": "latest",
+    "extract-text-webpack-plugin": "latest",
+    "fs-extra": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-sass": "latest",
+    "gulp-strip-css-comments": "latest",
+    "gulp-uglify": "latest",
+    "html-webpack-plugin": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "npm-check-updates": "latest",
+    "prettier-standard": "latest",
+    "primer-buttons": "latest",
+    "primer-tooltips": "latest",
+    "react": "latest",
+    "react-dev-utils": "latest",
+    "react-dom": "latest",
+    "sass-module-importer": "latest",
+    "standard": "latest",
+    "standard-markdown": "latest",
+    "uglifyjs-webpack-plugin": "~1.2.4",
+    "unminified-webpack-plugin": "latest",
+    "webpack": "latest",
+    "webpack-dev-server": "latest"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "files": [
+    "amd",
+    "commonjs",
+    "src",
+    "umd"
+  ],
+  "scripts": {
+    "build": "npm run build:umd && npm run build:amd && npm run build:cjs && npm run build:css",
+    "build:amd": "./scripts/build amd",
+    "build:cjs": "./scripts/build cjs",
+    "build:css": "gulp build",
+    "build:umd": "./scripts/build umd",
+    "dev": "concurrently \"./scripts/start\" \"gulp\"",
+    "lint": "standard-markdown && standard src",
+    "precommit": "lint-staged",
+    "prepublishOnly": "npm run build",
+    "pretest": "npm run lint",
+    "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
+    "test": "exit 0"
+  },
+  "license": "ISC",
+  "lint-staged": {
+    "package.json": [
+      "finepack",
+      "git add"
+    ],
+    "*.js": [
+      "prettier-standard",
+      "git add"
+    ]
+  },
+  "standard": {
+    "ignore": [],
+    "parser": "babel-eslint",
+    "plugins": [
+      "jsx-a11y"
+    ]
+  }
+}

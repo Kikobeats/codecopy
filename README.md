@@ -1,0 +1,44 @@
+# codecopy
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Kikobeats/react-codecopy/master/demo.gif" alt="codecopy">
+</p>
+
+![Last version](https://img.shields.io/github/tag/Kikobeats/codecopy.svg?style=flat-square)
+[![Build Status](https://img.shields.io/travis/Kikobeats/codecopy/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/codecopy)
+[![Dependency status](https://img.shields.io/david/Kikobeats/codecopy.svg?style=flat-square)](https://david-dm.org/Kikobeats/codecopy)
+[![Dev Dependencies Status](https://img.shields.io/david/dev/Kikobeats/codecopy.svg?style=flat-square)](https://david-dm.org/Kikobeats/codecopy#info=devDependencies)
+[![NPM Status](https://img.shields.io/npm/dm/codecopy.svg?style=flat-square)](https://www.npmjs.org/package/codecopy)
+[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/Kikobeats)
+
+> "Copy to clipboard button" for your code snippets. Inspired in [codecopy](https://github.com/zenorocha/codecopy).
+
+
+## Install
+
+```bash
+$ npm install codecopy --save
+```
+
+## Usage
+
+
+```jsx
+import CodeCopy from 'codecopy'
+
+<CodeCopy>
+  <pre>
+    <code>{`<!-- Microlink SDK Vanilla/UMD bundle -->
+<script src="//cdn.jsdelivr.net/npm/microlinkjs@latest/umd/microlink.min.js"></script>`}</code>
+  </pre>
+</CodeCopy>
+```
+
+Additionally you can specify `iconComponent`.
+
+## License
+
+**codecopy** © [Kiko Beats](https://kikobeats.com), released under the [MIT](https://github.com/Kikobeats/codecopy/blob/master/LICENSE.md) License.<br>
+Authored and maintained by Kiko Beats with help from [contributors](https://github.com/Kikobeats/codecopy/contributors).
+
+> [kikobeats.com](https://kikobeats.com) · GitHub [Kiko Beats](https://github.com/Kikobeats) · Twitter [@Kikobeats](https://twitter.com/Kikobeats)
