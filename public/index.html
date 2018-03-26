@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>codecopy.js</title>
   <link rel="stylesheet" href="codecopy.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.13.0/themes/prism.min.css">
   <style>
     pre {
       padding: 30px;
@@ -18,6 +19,14 @@
       background: #fafbfc;
       color: #4a4c4b;
     }
+    p {
+      text-align: center;
+      font-family: helvetica, sans-serif;
+      padding-top: 1rem; font-size: 16px;
+    }
+    a {
+      color: rgb(3, 102, 214);
+    }
   </style>
 
 </head>
@@ -27,10 +36,17 @@
     <div style="margin: auto;">
       <div>
         <div>
-          <pre><code>&lt;!-- CodeCopy Vanilla/UMD bundle --&gt;
-&lt;script src="//cdn.jsdelivr.net/npm/codecopy@latest/umd/microlink.min.js"&gt;&lt;/script&gt;</code></pre>
+          <pre><code class="language-html">&lt;!-- CodeCopy Vanilla/UMD bundle --&gt;
+&lt;link rel="stylesheet" src="//cdn.jsdelivr.net/npm/codecopy.js/umd/codecopy.min.css"&gt;&lt;/link&gt;
+&lt;script src="//cdn.jsdelivr.net/npm/codecopy.js/umd/codecopy.min.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;document.addEventListener('DOMContentLoaded', function (event) {
+  codecopy('pre')
+})
+&lt;/script&gt;</code></pre>
         </div>
-        <p style="text-align: center; font-family: helvetica, sans-serif; padding-top: 1rem; font-size: 16px;">Hover the text to copy it. See on <a target="_blank" href="https://github.com/Kikobeats/react-codecopy" style="color: rgb(3, 102, 214);">GitHub</a>.</p>
+        <p>Hover the text to copy it. See on <a target="_blank" href="https://github.com/Kikobeats/CodeCopy">GitHub</a>.</p>
+        <p>Also <a href="https://github.com/Kikobeats/react-codecopy">react</a> version!
       </div>
     </div>
   </div>
@@ -38,6 +54,7 @@
     codecopy('pre')
   })
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.13.0/prism.min.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
   "name": "codecopy.js",
   "description": "\"Copy to clipboard button\" for your code snippets",
   "homepage": "https://github.com/Kikobeats/codecopy.js#readme",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "src/index.js",
   "author": {
     "name": "\"Copy to clipboard button\" for your code snippets"
@@ -76,17 +76,17 @@
     "build": "npm run build:umd && npm run build:amd && npm run build:cjs && npm run build:css",
     "build:amd": "./scripts/build amd",
     "build:cjs": "./scripts/build cjs",
-    "build:css": "gulp build",
+    "build:css": "gulp build && echo umd/codecopy.min.css amd/codecopy.min.css cjs/codecopy.min.css | xargs -n1 cp public/codecopy.min.css",
     "build:umd": "./scripts/build umd",
     "dev": "concurrently \"./scripts/start\" \"gulp\"",
     "lint": "standard-markdown && standard src",
     "precommit": "lint-staged",
     "prepublishOnly": "npm run build",
     "pretest": "npm run lint",
-    "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
+    "pretty": "prettier-standard index.js {core,test}/**/*.js --single-quote",
     "test": "exit 0"
   },
-  "license": "ISC",
+  "license": "MIT",
   "lint-staged": {
     "package.json": [
       "finepack",

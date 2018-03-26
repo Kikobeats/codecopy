@@ -11,30 +11,37 @@
 [![NPM Status](https://img.shields.io/npm/dm/codecopy.svg?style=flat-square)](https://www.npmjs.org/package/codecopy)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/Kikobeats)
 
-> "Copy to clipboard button" for your code snippets. Inspired in [codecopy](https://github.com/zenorocha/codecopy).
-
+> "Copy to clipboard" button for your code snippets. Inspired in [codecopy](https://github.com/zenorocha/codecopy).
 
 ## Install
+
+### from NPM
 
 ```bash
 $ npm install codecopy --save
 ```
 
-## Usage
+### from CDN
 
-
-```jsx
-import CodeCopy from 'codecopy'
-
-<CodeCopy>
-  <pre>
-    <code>{`<!-- Microlink SDK Vanilla/UMD bundle -->
-<script src="//cdn.jsdelivr.net/npm/microlinkjs@latest/umd/microlink.min.js"></script>`}</code>
-  </pre>
-</CodeCopy>
+```html
+<!-- CodeCopy Vanilla/UMD bundle -->
+<link rel="stylesheet" src="//cdn.jsdelivr.net/npm/codecopy.js/umd/codecopy.min.css"></link>
+<script src="//cdn.jsdelivr.net/npm/codecopy.js/umd/codecopy.min.js"></script>
 ```
 
-Additionally you can specify `iconComponent`.
+Also available `amd` and `cjs` version.
+
+## Usage
+
+```js
+document.addEventListener('DOMContentLoaded', function (event) {
+  codecopy('pre') // your code tag selector!
+})
+```
+
+## Related
+
+- [react-codecopy](https://github.com/Kikobeats/react-codecopy) – A React component for "Copy to clipboard" button for your code snippets.
 
 ## License
 
