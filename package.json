@@ -2,7 +2,7 @@
   "name": "codecopy.js",
   "description": "\"Copy to clipboard button\" for your code snippets",
   "homepage": "https://github.com/Kikobeats/codecopy.js#readme",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "src/index.js",
   "author": {
     "name": "\"Copy to clipboard button\" for your code snippets"
