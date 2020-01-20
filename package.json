@@ -58,7 +58,7 @@
     "sass-module-importer": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
-    "uglifyjs-webpack-plugin": "~1.2.4",
+    "uglifyjs-webpack-plugin": "~2.2.0",
     "unminified-webpack-plugin": "latest",
     "webpack": "latest",
     "webpack-dev-server": "latest"
