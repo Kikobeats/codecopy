@@ -54,7 +54,7 @@ const createBundle = config => {
       return build(previousFileSizes)
     })
     .then(
-      ({stats, previousFileSizes, warnings}) => {
+      ({ stats, previousFileSizes, warnings }) => {
         if (warnings.length) {
           console.log(chalk.yellow('Compiled with warnings.\n'))
           console.log(warnings.join('\n\n'))
@@ -87,9 +87,9 @@ const createBundle = config => {
 
         printHostingInstructions(appPackage, publicUrl, publicPath, buildFolder, useYarn)
       },
-      err => {
+      error => {
         console.log(chalk.red('Failed to compile.\n'))
-        printBuildError(err)
+        printBuildError(error)
         process.exit(1)
       }
     )
